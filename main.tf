@@ -4,6 +4,15 @@ provider "aws" {
   access_key = var.access_key
   secret_key = var.secret_key
 }
+terraform {
+  backend "s3" {
+    bucket = "backendhc"
+    key    = "test.tfstate"
+    region = "us-east-1"
+    access_key = "xxxxx"
+    secret_key = "xxxxx"
+  }
+}
 
 data "aws_ami" "linux_machine" {
   most_recent = true
