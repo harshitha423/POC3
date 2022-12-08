@@ -6,7 +6,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket     = "backendhc"
+    bucket     = "backendhhcc"
     key        = "test.tfstate"
     region     = "us-east-1"
     access_key = "xxxxx"
