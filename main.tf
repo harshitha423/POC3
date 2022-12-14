@@ -6,11 +6,11 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket     = "backendhhcc"
+    bucket     = "samplepocbuckett"
     key        = "test.tfstate"
-    region     = "us-east-1"
-    access_key = "xxxxx"
-    secret_key = "xxxxx"
+    region     = "ap-south-1"
+    access_key    = "AKIARML37IA2QEPN4Z4H"
+    secret_key    = "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"
   }
 }
 
